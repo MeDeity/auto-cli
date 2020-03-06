@@ -42,8 +42,8 @@ program
         //             }]
         //         }
         //     ]);
-        logWithSpinner(`Download UI template: ${answer.mode}`);
-        download(`MeDeity/auto-template-${answer.mode}`, name, function (err) {
+        logWithSpinner(`Download UI template...`);
+        download(`MeDeity/auto-template`, name, function (err) {
             if (err) {
                 failSpinner()
                 console.log(chalk.red(err))
